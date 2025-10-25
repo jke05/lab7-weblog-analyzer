@@ -8,3 +8,5 @@ except the printData method
 6. reading = new double[60];
    urls = new String[90];
    machines = new TicketMachine[5];
+7. 20
+8. prices = new double[50];

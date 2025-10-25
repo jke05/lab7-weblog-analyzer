@@ -10,3 +10,24 @@ except the printData method
    machines = new TicketMachine[5];
 7. 20
 8. prices = new double[50];
+9. Index 24 out of bounds
+10. public void printHourlyCountsWhile(){
+        //declaration
+        int hour = 0;
+        System.out.println("Hr: Count");
+        //while condition
+        while (hour < hourCounts.length) {
+            //body
+            System.out.println(hour + ": " + hourCounts[hour]);
+            
+            //update
+            hour ++;
+        }
+   }
+11. public void printGreater(double[] marks, double mean){
+       for (int index = 0; index <= marks.length; index++){
+           if (marks[index] > mean){
+               System.out.println(marks[index]);
+           }
+       }
+   }

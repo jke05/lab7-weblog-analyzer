@@ -65,6 +65,14 @@ public class LogAnalyzer
         }
    }
 
+   public void printGreater(double[] marks, double mean){
+       for (int index = 0; index <= marks.length; index++){
+           if (marks[index] > mean){
+               System.out.println(marks[index]);
+           }
+       }
+   }
+
     /**
      * Print the lines of data read by the LogfileReader
      */

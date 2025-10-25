@@ -1,0 +1,1 @@
+1. The busiest hours of the day are: 18, 14 and 10

@@ -39,3 +39,10 @@ except the printData method
         // Create the reader to obtain the data.
         reader = new LogfileReader(fileName);
     }
+13. public int numberOfAccess(){
+        int total = 0;
+        for (int count : hourCounts){
+            total += count;
+        }
+        return total;
+    }

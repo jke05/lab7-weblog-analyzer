@@ -31,3 +31,11 @@ except the printData method
            }
        }
    }
+12. public LogAnalyzer(String fileName)
+    { 
+        // Create the array object to hold the hourly
+        // access counts.
+        hourCounts = new int[HOURS_PER_DAY];
+        // Create the reader to obtain the data.
+        reader = new LogfileReader(fileName);
+    }

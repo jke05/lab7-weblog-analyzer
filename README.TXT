@@ -46,3 +46,34 @@ except the printData method
         }
         return total;
     }
+15. public int busiestHour(){
+       int busiestHour = 0;
+       for (int hour = 1; hour < hourCounts.length ; hour++){
+           if (hourCounts[hour] > hourCounts[busiestHour]){
+               busiestHour = hour;
+           }
+       }
+       return busiestHour;
+   }
+16. public int quietestHour(){
+       int quietestHour = 0;
+       for (int hour = 1; hour < hourCounts.length ; hour++){
+           if (hourCounts[hour] < hourCounts[quietestHour]){
+               quietestHour = hour;
+           }
+       }
+       return quietestHour;
+   }
+17. the hour with smallest index
+18. public int busiestPeriod(){
+       int busiestTwoHour = 0;
+       int maxCount = hourCounts[0] + hourCounts[1];
+       for (int hour = 0; hour < hourCounts.length - 1 ; hour++){
+           int twoHourCount = hourCounts[hour] + hourCounts[hour + 1];
+           if (twoHourCount > maxCount){
+               maxCount = twoHourCount;
+               busiestTwoHour = hour;
+           }
+       }
+       return busiestTwoHour;
+   }
